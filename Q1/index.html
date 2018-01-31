@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .button {
+    margin-left: 10px;
+    display: inline-block;
+    padding: 45px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #1E90FF;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    .button:hover {background-color: #3e8e41}
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    .div, .timerButton {
+      margin-left: 10px;
+      padding: 25px 32px;
+      font-size: 24px;
+      text-align: center;
+      color: #fff;
+      background-color: #1E90FF;
+      border-style: solid;
+      border-color: #4bacf2;
+      border-width: 7px;
+  }
+
+      .timer{
+      margin-left: 2px;
+      padding: 2px 2px;
+      font-size: 24px;
+      text-align: center;
+      color: #fff;
+      background-color: #1E90FF;
+      border-style: solid;
+      border-color: #4bacf2;
+      border-width: 7px;
+  }
+
+      .timeButton {
+      margin-left: 2px;
+      padding: 2px 2px;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      background-color: #1E90FF;
+      border-radius: 5px;
+  }
+  </style>
+
+</head>
+<body>
+  <table style="margin:0px auto;padding: 10px;border:2px solid;border-color:#1E90FF">
+      <tbody>
+      <tr>
+      <td rowspan="2">
+        <!--- 照片 -->
+        <img id="image" src="img/on.jpg" width="400" height="300">
+      </td>
+      <td>
+        <!--- 倒數計時器 -->
+        <div class="div" id="timer">?</div>
+      </td>
+      </tr>
+      <tr>
+      <td>
+        <!--- 開關燈按鈕 -->
+        <button class="button" onclick="toggleLight();">ON<br>-<br>OFF</button></td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="container">
+        <input type="text" id="time" placeholder="請填入數字">
+        <button class="timeButton" onclick="setTime();">設定倒數</button>
+    </div>
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
